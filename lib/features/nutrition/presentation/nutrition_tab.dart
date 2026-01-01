@@ -10,10 +10,7 @@ class NutritionTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
-      appBar: AppBar(
-        title: const Text('Nutrition'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('Nutrition'), centerTitle: true),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(AppConstants.spacingXL),
@@ -29,15 +26,15 @@ class NutritionTab extends StatelessWidget {
               Text(
                 'Nutrition Tracking',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(height: AppConstants.spacingMD),
               Text(
                 'Track your meals and nutrition goals',
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: AppColors.textSecondary,
-                    ),
+                style: Theme.of(
+                  context,
+                ).textTheme.bodyLarge?.copyWith(color: AppColors.textSecondary),
                 textAlign: TextAlign.center,
               ),
             ],
@@ -54,4 +51,3 @@ class NutritionTab extends StatelessWidget {
     );
   }
 }
-

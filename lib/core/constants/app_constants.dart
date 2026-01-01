@@ -94,4 +94,3 @@ class AppConstants {
   static const String keyThemeMode = 'theme_mode';
   static const String keyReduceTransparency = 'reduce_transparency';
 }
-

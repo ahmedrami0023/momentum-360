@@ -19,4 +19,3 @@ class MomentumApp extends ConsumerWidget {
     );
   }
 }
-

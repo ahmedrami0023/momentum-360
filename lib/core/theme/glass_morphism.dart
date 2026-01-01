@@ -99,10 +99,7 @@ class GlassMorphism {
             color: AppColors.glassBackground,
             borderRadius: borderRadius ?? BorderRadius.zero,
             border: Border(
-              top: BorderSide(
-                color: AppColors.glassBorder,
-                width: 1,
-              ),
+              top: BorderSide(color: AppColors.glassBorder, width: 1),
             ),
           ),
           child: child,
@@ -112,10 +109,7 @@ class GlassMorphism {
   }
 
   /// For modal overlays and dialogs
-  static Widget forModal({
-    required Widget child,
-    BorderRadius? borderRadius,
-  }) {
+  static Widget forModal({required Widget child, BorderRadius? borderRadius}) {
     return ClipRRect(
       borderRadius: borderRadius ?? BorderRadius.circular(20),
       child: BackdropFilter(
@@ -124,10 +118,7 @@ class GlassMorphism {
           decoration: BoxDecoration(
             color: AppColors.glassBackground,
             borderRadius: borderRadius ?? BorderRadius.circular(20),
-            border: Border.all(
-              color: AppColors.glassBorder,
-              width: 1.5,
-            ),
+            border: Border.all(color: AppColors.glassBorder, width: 1.5),
           ),
           child: child,
         ),
@@ -136,10 +127,7 @@ class GlassMorphism {
   }
 
   /// For floating action buttons
-  static Widget forFAB({
-    required Widget child,
-    BorderRadius? borderRadius,
-  }) {
+  static Widget forFAB({required Widget child, BorderRadius? borderRadius}) {
     return ClipRRect(
       borderRadius: borderRadius ?? BorderRadius.circular(28),
       child: BackdropFilter(
@@ -148,10 +136,7 @@ class GlassMorphism {
           decoration: BoxDecoration(
             color: AppColors.glassBackground,
             borderRadius: borderRadius ?? BorderRadius.circular(28),
-            border: Border.all(
-              color: AppColors.glassBorder,
-              width: 1.5,
-            ),
+            border: Border.all(color: AppColors.glassBorder, width: 1.5),
           ),
           child: child,
         ),
@@ -159,4 +144,3 @@ class GlassMorphism {
     );
   }
 }
-

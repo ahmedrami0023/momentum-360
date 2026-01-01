@@ -11,10 +11,7 @@ class ProfileTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
-      appBar: AppBar(
-        title: const Text('Profile'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('Profile'), centerTitle: true),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(AppConstants.spacingMD),
         child: Column(
@@ -28,7 +25,8 @@ class ProfileTab extends StatelessWidget {
                     backgroundColor: AppColors.workoutPrimary,
                     child: Text(
                       'U',
-                      style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                      style: Theme.of(context).textTheme.displayMedium
+                          ?.copyWith(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                           ),
@@ -38,15 +36,15 @@ class ProfileTab extends StatelessWidget {
                   Text(
                     'User Name',
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: AppConstants.spacingSM),
                   Text(
                     'user@example.com',
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
+                      color: AppColors.textSecondary,
+                    ),
                   ),
                 ],
               ),
@@ -111,9 +109,9 @@ class _SettingsOption extends StatelessWidget {
           Expanded(
             child: Text(
               title,
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: color,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyLarge?.copyWith(color: color),
             ),
           ),
           Icon(Icons.chevron_right, color: AppColors.textSecondary),
@@ -122,4 +120,3 @@ class _SettingsOption extends StatelessWidget {
     );
   }
 }
-

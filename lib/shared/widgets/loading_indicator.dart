@@ -7,12 +7,7 @@ class LoadingIndicator extends StatelessWidget {
   final double size;
   final String? message;
 
-  const LoadingIndicator({
-    super.key,
-    this.color,
-    this.size = 40,
-    this.message,
-  });
+  const LoadingIndicator({super.key, this.color, this.size = 40, this.message});
 
   @override
   Widget build(BuildContext context) {
@@ -34,9 +29,9 @@ class LoadingIndicator extends StatelessWidget {
             const SizedBox(height: 16),
             Text(
               message!,
-              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AppColors.textSecondary,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.bodyMedium?.copyWith(color: AppColors.textSecondary),
             ),
           ],
         ],
@@ -49,10 +44,7 @@ class LoadingIndicator extends StatelessWidget {
 class SmallLoadingIndicator extends StatelessWidget {
   final Color? color;
 
-  const SmallLoadingIndicator({
-    super.key,
-    this.color,
-  });
+  const SmallLoadingIndicator({super.key, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -68,4 +60,3 @@ class SmallLoadingIndicator extends StatelessWidget {
     );
   }
 }
-

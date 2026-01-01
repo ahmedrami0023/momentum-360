@@ -52,17 +52,17 @@ class _LoginScreenState extends State<LoginScreen> {
                   Text(
                     'Momentum 360',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.workoutPrimary,
-                        ),
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.workoutPrimary,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: AppConstants.spacingSM),
                   Text(
                     'Track your fitness journey',
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
+                      color: AppColors.textSecondary,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: AppConstants.spacingXXL),
@@ -121,11 +121,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: () => context.go('/signup'),
                         child: Text(
                           'Sign Up',
-                          style:
-                              Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                    color: AppColors.workoutPrimary,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                          style: Theme.of(context).textTheme.bodyMedium
+                              ?.copyWith(
+                                color: AppColors.workoutPrimary,
+                                fontWeight: FontWeight.w600,
+                              ),
                         ),
                       ),
                     ],
@@ -139,4 +139,3 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
-

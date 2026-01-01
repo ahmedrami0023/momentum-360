@@ -33,23 +33,23 @@ class GlassCard extends StatelessWidget {
 
     final glassWidget = switch (intensity) {
       GlassIntensity.subtle => GlassMorphism.subtle(
-          child: content,
-          borderRadius: borderRadius,
-          backgroundColor: backgroundColor,
-          borderColor: borderColor,
-        ),
+        child: content,
+        borderRadius: borderRadius,
+        backgroundColor: backgroundColor,
+        borderColor: borderColor,
+      ),
       GlassIntensity.medium => GlassMorphism.medium(
-          child: content,
-          borderRadius: borderRadius,
-          backgroundColor: backgroundColor,
-          borderColor: borderColor,
-        ),
+        child: content,
+        borderRadius: borderRadius,
+        backgroundColor: backgroundColor,
+        borderColor: borderColor,
+      ),
       GlassIntensity.heavy => GlassMorphism.heavy(
-          child: content,
-          borderRadius: borderRadius,
-          backgroundColor: backgroundColor,
-          borderColor: borderColor,
-        ),
+        child: content,
+        borderRadius: borderRadius,
+        backgroundColor: backgroundColor,
+        borderColor: borderColor,
+      ),
     };
 
     if (onTap != null) {
@@ -64,9 +64,4 @@ class GlassCard extends StatelessWidget {
   }
 }
 
-enum GlassIntensity {
-  subtle,
-  medium,
-  heavy,
-}
-
+enum GlassIntensity { subtle, medium, heavy }

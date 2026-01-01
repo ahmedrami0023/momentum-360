@@ -10,10 +10,7 @@ class ProgressTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
-      appBar: AppBar(
-        title: const Text('Progress'),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('Progress'), centerTitle: true),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(AppConstants.spacingXL),
@@ -29,15 +26,15 @@ class ProgressTab extends StatelessWidget {
               Text(
                 'Progress & Analytics',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(height: AppConstants.spacingMD),
               Text(
                 'View your fitness journey and achievements',
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: AppColors.textSecondary,
-                    ),
+                style: Theme.of(
+                  context,
+                ).textTheme.bodyLarge?.copyWith(color: AppColors.textSecondary),
                 textAlign: TextAlign.center,
               ),
             ],
@@ -47,4 +44,3 @@ class ProgressTab extends StatelessWidget {
     );
   }
 }
-

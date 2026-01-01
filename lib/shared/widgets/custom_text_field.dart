@@ -89,10 +89,7 @@ class CustomTextField extends StatelessWidget {
               ),
               errorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(AppConstants.radiusMD),
-                borderSide: const BorderSide(
-                  color: AppColors.error,
-                  width: 2,
-                ),
+                borderSide: const BorderSide(color: AppColors.error, width: 2),
               ),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: AppConstants.spacingMD,
@@ -105,4 +102,3 @@ class CustomTextField extends StatelessWidget {
     );
   }
 }
-

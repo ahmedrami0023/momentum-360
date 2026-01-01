@@ -7,9 +7,9 @@ import '../../core/constants/app_constants.dart';
 /// Easy migration path to Firebase later
 class StorageService {
   StorageService._();
-  
+
   static final StorageService instance = StorageService._();
-  
+
   SharedPreferences? _prefs;
 
   /// Initialize the storage service
@@ -93,7 +93,10 @@ class StorageService {
     return await saveWorkouts(workouts);
   }
 
-  Future<bool> updateWorkout(String workoutId, Map<String, dynamic> workout) async {
+  Future<bool> updateWorkout(
+    String workoutId,
+    Map<String, dynamic> workout,
+  ) async {
     final workouts = getWorkouts();
     final index = workouts.indexWhere((w) => w['id'] == workoutId);
     if (index != -1) {
@@ -149,7 +152,9 @@ class StorageService {
 
   // ========== Body Measurements Methods ==========
 
-  Future<bool> saveBodyMeasurements(List<Map<String, dynamic>> measurements) async {
+  Future<bool> saveBodyMeasurements(
+    List<Map<String, dynamic>> measurements,
+  ) async {
     return await saveList(AppConstants.keyBodyMeasurements, measurements);
   }
 
@@ -177,13 +182,13 @@ class StorageService {
     final records = getPersonalRecords();
     final exerciseId = record['exerciseId'];
     final index = records.indexWhere((r) => r['exerciseId'] == exerciseId);
-    
+
     if (index != -1) {
       records[index] = record;
     } else {
       records.add(record);
     }
-    
+
     return await savePersonalRecords(records);
   }
 
@@ -232,4 +237,3 @@ class StorageService {
     return prefs.get(key) as T?;
   }
 }
-

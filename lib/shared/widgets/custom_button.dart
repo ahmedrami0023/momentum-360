@@ -65,9 +65,7 @@ class _CustomButtonState extends State<CustomButton> {
             child: CircularProgressIndicator(
               strokeWidth: 2,
               valueColor: AlwaysStoppedAnimation<Color>(
-                widget.type == ButtonType.primary
-                    ? Colors.white
-                    : buttonColor,
+                widget.type == ButtonType.primary ? Colors.white : buttonColor,
               ),
             ),
           )
@@ -108,9 +106,7 @@ class _CustomButtonState extends State<CustomButton> {
       case ButtonType.secondary:
         decoration = NeomorphicStyle.medium(
           borderRadius: BorderRadius.circular(AppConstants.radiusMD),
-        ).copyWith(
-          border: Border.all(color: buttonColor, width: 2),
-        );
+        ).copyWith(border: Border.all(color: buttonColor, width: 2));
         break;
 
       case ButtonType.text:
@@ -138,15 +134,6 @@ class _CustomButtonState extends State<CustomButton> {
   }
 }
 
-enum ButtonType {
-  primary,
-  secondary,
-  text,
-}
+enum ButtonType { primary, secondary, text }
 
-enum ButtonSection {
-  workout,
-  nutrition,
-  progress,
-}
-
+enum ButtonSection { workout, nutrition, progress }

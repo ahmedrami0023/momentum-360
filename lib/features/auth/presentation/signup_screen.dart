@@ -54,17 +54,17 @@ class _SignupScreenState extends State<SignupScreen> {
                   Text(
                     'Create Account',
                     style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.workoutPrimary,
-                        ),
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.workoutPrimary,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: AppConstants.spacingSM),
                   Text(
                     'Start your fitness journey today',
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: AppColors.textSecondary,
-                        ),
+                      color: AppColors.textSecondary,
+                    ),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: AppConstants.spacingXXL),
@@ -75,7 +75,8 @@ class _SignupScreenState extends State<SignupScreen> {
                     label: 'Name',
                     hint: 'Enter your name',
                     prefixIcon: const Icon(Icons.person_outlined),
-                    validator: (value) => Validators.required(value, fieldName: 'Name'),
+                    validator: (value) =>
+                        Validators.required(value, fieldName: 'Name'),
                   ),
                   const SizedBox(height: AppConstants.spacingLG),
 
@@ -133,11 +134,11 @@ class _SignupScreenState extends State<SignupScreen> {
                         onPressed: () => context.go('/login'),
                         child: Text(
                           'Log In',
-                          style:
-                              Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                    color: AppColors.workoutPrimary,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                          style: Theme.of(context).textTheme.bodyMedium
+                              ?.copyWith(
+                                color: AppColors.workoutPrimary,
+                                fontWeight: FontWeight.w600,
+                              ),
                         ),
                       ),
                     ],
@@ -151,4 +152,3 @@ class _SignupScreenState extends State<SignupScreen> {
     );
   }
 }
-

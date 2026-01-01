@@ -5,13 +5,9 @@ import 'shared/services/storage_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   // Initialize storage service
   await StorageService.instance.init();
-  
-  runApp(
-    const ProviderScope(
-      child: MomentumApp(),
-    ),
-  );
+
+  runApp(const ProviderScope(child: MomentumApp()));
 }

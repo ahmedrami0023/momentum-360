@@ -98,4 +98,3 @@ class AppDateUtils {
     return firstDayOfNextMonth.subtract(const Duration(days: 1)).day;
   }
 }
-

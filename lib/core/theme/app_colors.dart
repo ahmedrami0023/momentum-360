@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// App color scheme with section-based color coding
 /// Workout: Orange/Red gradient
-/// Nutrition: Green/Teal  
+/// Nutrition: Green/Teal
 /// Progress: Purple/Blue
 class AppColors {
   AppColors._();
@@ -59,6 +59,7 @@ class AppColors {
   static const Color backgroundDark = Color(0xFF121212);
   static const Color cardBackgroundDark = Color(0xFF1E1E1E);
   static const Color textPrimaryDark = Color(0xFFFFFFFF);
-  static const Color glassBackgroundDark = Color(0xB3000000); // 70% opacity black
+  static const Color glassBackgroundDark = Color(
+    0xB3000000,
+  ); // 70% opacity black
 }
-

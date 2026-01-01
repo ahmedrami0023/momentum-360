@@ -2,7 +2,7 @@
 /// Useful for development, testing, and demos
 class MockDataService {
   MockDataService._();
-  
+
   static final MockDataService instance = MockDataService._();
 
   /// Generate sample exercises for the library
@@ -41,7 +41,7 @@ class MockDataService {
         'equipment': 'Bodyweight',
         'instructions': 'Lower body between parallel bars, push back up',
       },
-      
+
       // Pull Exercises
       {
         'id': 'ex_005',
@@ -75,7 +75,7 @@ class MockDataService {
         'equipment': 'Dumbbells',
         'instructions': 'Curl dumbbells up to shoulders',
       },
-      
+
       // Leg Exercises
       {
         'id': 'ex_009',
@@ -117,7 +117,7 @@ class MockDataService {
         'equipment': 'Machine',
         'instructions': 'Curl legs up towards glutes',
       },
-      
+
       // Core Exercises
       {
         'id': 'ex_014',
@@ -143,7 +143,7 @@ class MockDataService {
         'equipment': 'Bodyweight',
         'instructions': 'Twist torso side to side while seated',
       },
-      
+
       // Cardio
       {
         'id': 'ex_017',
@@ -233,12 +233,7 @@ class MockDataService {
 
   /// Generate default nutrition goals
   Map<String, dynamic> getDefaultNutritionGoals() {
-    return {
-      'calories': 2000,
-      'protein': 150,
-      'carbs': 200,
-      'fat': 65,
-    };
+    return {'calories': 2000, 'protein': 150, 'carbs': 200, 'fat': 65};
   }
 
   /// Generate sample body measurement
@@ -268,4 +263,3 @@ class MockDataService {
     };
   }
 }
-

@@ -21,16 +21,16 @@ class HomeScreen extends StatelessWidget {
               Text(
                 'Welcome back!',
                 style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textPrimary,
-                    ),
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.textPrimary,
+                ),
               ),
               const SizedBox(height: AppConstants.spacingSM),
               Text(
                 'Ready to crush your goals today?',
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: AppColors.textSecondary,
-                    ),
+                style: Theme.of(
+                  context,
+                ).textTheme.bodyLarge?.copyWith(color: AppColors.textSecondary),
               ),
               const SizedBox(height: AppConstants.spacingXL),
 
@@ -43,9 +43,7 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           Text(
                             '12',
-                            style: Theme.of(context)
-                                .textTheme
-                                .displaySmall
+                            style: Theme.of(context).textTheme.displaySmall
                                 ?.copyWith(
                                   color: AppColors.workoutPrimary,
                                   fontWeight: FontWeight.bold,
@@ -67,9 +65,7 @@ class HomeScreen extends StatelessWidget {
                         children: [
                           Text(
                             '7',
-                            style: Theme.of(context)
-                                .textTheme
-                                .displaySmall
+                            style: Theme.of(context).textTheme.displaySmall
                                 ?.copyWith(
                                   color: AppColors.progressPrimary,
                                   fontWeight: FontWeight.bold,
@@ -101,15 +97,15 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       'Upper Body Push',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.w600,
-                          ),
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                     const SizedBox(height: AppConstants.spacingSM),
                     Text(
                       '45 minutes • 5 exercises',
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: AppColors.textSecondary,
-                          ),
+                        color: AppColors.textSecondary,
+                      ),
                     ),
                   ],
                 ),
@@ -134,11 +130,11 @@ class HomeScreen extends StatelessWidget {
                         ),
                         Text(
                           '1,450 / 2,000',
-                          style:
-                              Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                    fontWeight: FontWeight.w600,
-                                    color: AppColors.nutritionPrimary,
-                                  ),
+                          style: Theme.of(context).textTheme.bodyLarge
+                              ?.copyWith(
+                                fontWeight: FontWeight.w600,
+                                color: AppColors.nutritionPrimary,
+                              ),
                         ),
                       ],
                     ),
@@ -162,4 +158,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

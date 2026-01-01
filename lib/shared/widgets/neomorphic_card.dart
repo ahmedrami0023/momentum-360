@@ -26,21 +26,21 @@ class NeomorphicCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final decoration = switch (elevation) {
       NeomorphicElevation.subtle => NeomorphicStyle.subtle(
-          backgroundColor: backgroundColor,
-          borderRadius: borderRadius,
-        ),
+        backgroundColor: backgroundColor,
+        borderRadius: borderRadius,
+      ),
       NeomorphicElevation.medium => NeomorphicStyle.medium(
-          backgroundColor: backgroundColor,
-          borderRadius: borderRadius,
-        ),
+        backgroundColor: backgroundColor,
+        borderRadius: borderRadius,
+      ),
       NeomorphicElevation.prominent => NeomorphicStyle.prominent(
-          backgroundColor: backgroundColor,
-          borderRadius: borderRadius,
-        ),
+        backgroundColor: backgroundColor,
+        borderRadius: borderRadius,
+      ),
       NeomorphicElevation.flat => NeomorphicStyle.flat(
-          backgroundColor: backgroundColor,
-          borderRadius: borderRadius,
-        ),
+        backgroundColor: backgroundColor,
+        borderRadius: borderRadius,
+      ),
     };
 
     final content = Container(
@@ -61,10 +61,4 @@ class NeomorphicCard extends StatelessWidget {
   }
 }
 
-enum NeomorphicElevation {
-  subtle,
-  medium,
-  prominent,
-  flat,
-}
-
+enum NeomorphicElevation { subtle, medium, prominent, flat }
