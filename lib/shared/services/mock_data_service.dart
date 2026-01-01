@@ -1,5 +1,3 @@
-import '../../core/constants/app_constants.dart';
-
 /// Mock data service for populating sample data
 /// Useful for development, testing, and demos
 class MockDataService {
