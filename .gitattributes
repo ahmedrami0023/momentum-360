@@ -1,0 +1,45 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Dart files
+*.dart text diff=dart
+
+# Flutter/Dart specific
+pubspec.yaml text
+pubspec.lock text
+analysis_options.yaml text
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+
+# iOS
+*.pbxproj text
+*.xcworkspace text
+*.xcscheme text
+
+# Android
+*.gradle text
+*.xml text
+*.properties text
+
+# Documentation
+*.md text
+*.txt text
+
+# Scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+

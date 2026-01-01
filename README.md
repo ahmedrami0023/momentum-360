@@ -1,5 +1,10 @@
 # Momentum 360 - Solo Fitness App
 
+[![Flutter CI](https://github.com/ahmedrami0023/momentum-360/actions/workflows/flutter_ci.yml/badge.svg)](https://github.com/ahmedrami0023/momentum-360/actions/workflows/flutter_ci.yml)
+[![License](https://img.shields.io/badge/License-Private-red.svg)](LICENSE)
+[![Flutter](https://img.shields.io/badge/Flutter-3.38.5-02569B?logo=flutter)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.10.4-0175C2?logo=dart)](https://dart.dev)
+
 Modern all-in-one fitness tracking app with iOS 26 Liquid Glass design. Track workouts, nutrition, progress, and achieve your fitness goals.
 
 ## ✨ Features
@@ -152,6 +157,25 @@ flutter analyze
 ```bash
 flutter format lib
 ```
+
+## 🔄 CI/CD
+
+This project uses **GitHub Actions** for continuous integration:
+
+### Automated Checks (On every push/PR)
+- ✅ Code formatting verification
+- ✅ Static code analysis (`flutter analyze`)
+- ✅ Unit tests
+- ✅ Web build
+- ✅ Android APK build
+
+### Dependabot
+- 🤖 Automatic dependency updates
+- 📦 Weekly checks for new package versions
+- 🔐 Security vulnerability alerts
+
+### Workflow Status
+Check the latest build status: [GitHub Actions](https://github.com/ahmedrami0023/momentum-360/actions)
 
 ## 🗺 Roadmap
 
