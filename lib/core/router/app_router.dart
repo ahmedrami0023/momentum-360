@@ -7,6 +7,7 @@ import '../../features/workout/presentation/workout_tab.dart';
 import '../../features/nutrition/presentation/nutrition_tab.dart';
 import '../../features/progress/presentation/progress_tab.dart';
 import '../../features/profile/presentation/profile_tab.dart';
+import '../../shared/widgets/bottom_nav_bar.dart';
 
 /// App router configuration with GoRouter
 class AppRouter {
@@ -14,10 +15,18 @@ class AppRouter {
 
   static final rootNavigatorKey = GlobalKey<NavigatorState>();
   static final homeNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'home');
-  static final nutritionNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'nutrition');
-  static final workoutNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'workout');
-  static final progressNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'progress');
-  static final profileNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'profile');
+  static final nutritionNavigatorKey = GlobalKey<NavigatorState>(
+    debugLabel: 'nutrition',
+  );
+  static final workoutNavigatorKey = GlobalKey<NavigatorState>(
+    debugLabel: 'workout',
+  );
+  static final progressNavigatorKey = GlobalKey<NavigatorState>(
+    debugLabel: 'progress',
+  );
+  static final profileNavigatorKey = GlobalKey<NavigatorState>(
+    debugLabel: 'profile',
+  );
 
   static final GoRouter router = GoRouter(
     navigatorKey: rootNavigatorKey,
@@ -48,9 +57,8 @@ class AppRouter {
               GoRoute(
                 path: '/home',
                 name: 'home',
-                pageBuilder: (context, state) => const NoTransitionPage(
-                  child: HomeScreen(),
-                ),
+                pageBuilder: (context, state) =>
+                    const NoTransitionPage(child: HomeScreen()),
               ),
             ],
           ),
@@ -62,9 +70,8 @@ class AppRouter {
               GoRoute(
                 path: '/nutrition',
                 name: 'nutrition',
-                pageBuilder: (context, state) => const NoTransitionPage(
-                  child: NutritionTab(),
-                ),
+                pageBuilder: (context, state) =>
+                    const NoTransitionPage(child: NutritionTab()),
               ),
             ],
           ),
@@ -76,9 +83,8 @@ class AppRouter {
               GoRoute(
                 path: '/workout',
                 name: 'workout',
-                pageBuilder: (context, state) => const NoTransitionPage(
-                  child: WorkoutTab(),
-                ),
+                pageBuilder: (context, state) =>
+                    const NoTransitionPage(child: WorkoutTab()),
               ),
             ],
           ),
@@ -90,9 +96,8 @@ class AppRouter {
               GoRoute(
                 path: '/progress',
                 name: 'progress',
-                pageBuilder: (context, state) => const NoTransitionPage(
-                  child: ProgressTab(),
-                ),
+                pageBuilder: (context, state) =>
+                    const NoTransitionPage(child: ProgressTab()),
               ),
             ],
           ),
@@ -104,9 +109,8 @@ class AppRouter {
               GoRoute(
                 path: '/profile',
                 name: 'profile',
-                pageBuilder: (context, state) => const NoTransitionPage(
-                  child: ProfileTab(),
-                ),
+                pageBuilder: (context, state) =>
+                    const NoTransitionPage(child: ProfileTab()),
               ),
             ],
           ),
@@ -120,10 +124,7 @@ class AppRouter {
 class ScaffoldWithNavBar extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
 
-  const ScaffoldWithNavBar({
-    super.key,
-    required this.navigationShell,
-  });
+  const ScaffoldWithNavBar({super.key, required this.navigationShell});
 
   void _onTap(int index) {
     navigationShell.goBranch(
@@ -143,7 +144,3 @@ class ScaffoldWithNavBar extends StatelessWidget {
     );
   }
 }
-
-// Import bottom nav bar
-import '../../shared/widgets/bottom_nav_bar.dart';
-
