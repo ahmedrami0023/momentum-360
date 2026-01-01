@@ -14,11 +14,7 @@ import 'package:momentum_360/app.dart';
 void main() {
   testWidgets('App loads successfully', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(
-      const ProviderScope(
-        child: MomentumApp(),
-      ),
-    );
+    await tester.pumpWidget(const ProviderScope(child: MomentumApp()));
 
     // Verify that the app loads (check for login screen or home screen)
     // Since we start at /login, we should see login-related content
