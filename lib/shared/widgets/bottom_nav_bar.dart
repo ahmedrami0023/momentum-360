@@ -106,10 +106,11 @@ class _NavBarItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(
           horizontal: AppConstants.spacingSM,
-          vertical: AppConstants.spacingSM,
+          vertical: 6.0,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
               icon,
@@ -124,6 +125,8 @@ class _NavBarItem extends StatelessWidget {
                   color: color,
                   fontWeight: FontWeight.w500,
                 ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ],
           ],
