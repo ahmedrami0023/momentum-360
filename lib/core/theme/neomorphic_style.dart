@@ -17,14 +17,14 @@ class NeomorphicStyle {
       boxShadow: [
         // Light shadow (top-left)
         BoxShadow(
-          color: AppColors.shadowLight.withOpacity(0.7),
+          color: AppColors.shadowLight.withValues(alpha: 0.7),
           offset: const Offset(-2, -2),
           blurRadius: 4,
           spreadRadius: 0,
         ),
         // Dark shadow (bottom-right)
         BoxShadow(
-          color: AppColors.shadowDark.withOpacity(0.2),
+          color: AppColors.shadowDark.withValues(alpha: 0.2),
           offset: const Offset(2, 2),
           blurRadius: 4,
           spreadRadius: 0,
@@ -44,14 +44,14 @@ class NeomorphicStyle {
       boxShadow: [
         // Light shadow (top-left)
         BoxShadow(
-          color: AppColors.shadowLight.withOpacity(0.7),
+          color: AppColors.shadowLight.withValues(alpha: 0.7),
           offset: const Offset(-4, -4),
           blurRadius: 8,
           spreadRadius: 0,
         ),
         // Dark shadow (bottom-right)
         BoxShadow(
-          color: AppColors.shadowDark.withOpacity(0.3),
+          color: AppColors.shadowDark.withValues(alpha: 0.3),
           offset: const Offset(4, 4),
           blurRadius: 8,
           spreadRadius: 0,
@@ -71,14 +71,14 @@ class NeomorphicStyle {
       boxShadow: [
         // Light shadow (top-left)
         BoxShadow(
-          color: AppColors.shadowLight.withOpacity(0.8),
+          color: AppColors.shadowLight.withValues(alpha: 0.8),
           offset: const Offset(-6, -6),
           blurRadius: 12,
           spreadRadius: 0,
         ),
         // Dark shadow (bottom-right)
         BoxShadow(
-          color: AppColors.shadowDark.withOpacity(0.35),
+          color: AppColors.shadowDark.withValues(alpha: 0.35),
           offset: const Offset(6, 6),
           blurRadius: 12,
           spreadRadius: 0,
@@ -98,13 +98,13 @@ class NeomorphicStyle {
       boxShadow: [
         // Inner shadow effect (inverted)
         BoxShadow(
-          color: AppColors.shadowDark.withOpacity(0.25),
+          color: AppColors.shadowDark.withValues(alpha: 0.25),
           offset: const Offset(2, 2),
           blurRadius: 4,
           spreadRadius: -2,
         ),
         BoxShadow(
-          color: AppColors.shadowLight.withOpacity(0.5),
+          color: AppColors.shadowLight.withValues(alpha: 0.5),
           offset: const Offset(-2, -2),
           blurRadius: 4,
           spreadRadius: -2,
@@ -123,7 +123,7 @@ class NeomorphicStyle {
       borderRadius: borderRadius ?? BorderRadius.circular(12),
       boxShadow: [
         BoxShadow(
-          color: AppColors.shadowDark.withOpacity(0.1),
+          color: AppColors.shadowDark.withValues(alpha: 0.1),
           offset: const Offset(0, 2),
           blurRadius: 4,
           spreadRadius: 0,
@@ -142,7 +142,7 @@ class NeomorphicStyle {
       borderRadius: borderRadius ?? BorderRadius.circular(12),
       boxShadow: [
         BoxShadow(
-          color: AppColors.shadowDark.withOpacity(0.15),
+          color: AppColors.shadowDark.withValues(alpha: 0.15),
           offset: const Offset(1, 1),
           blurRadius: 2,
           spreadRadius: -1,

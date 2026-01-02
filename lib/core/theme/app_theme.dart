@@ -19,7 +19,6 @@ class AppTheme {
         secondary: AppColors.nutritionPrimary,
         tertiary: AppColors.progressPrimary,
         surface: AppColors.cardBackgroundLight,
-        background: AppColors.backgroundLight,
         error: AppColors.error,
       ),
       scaffoldBackgroundColor: AppColors.backgroundLight,
@@ -189,7 +188,7 @@ class AppTheme {
           color: AppColors.textSecondary,
         ),
         hintStyle: textTheme.bodyMedium?.copyWith(
-          color: AppColors.textSecondary.withOpacity(0.6),
+          color: AppColors.textSecondary.withValues(alpha: 0.6),
         ),
       ),
       dividerTheme: const DividerThemeData(
@@ -223,7 +222,6 @@ class AppTheme {
         secondary: AppColors.nutritionPrimary,
         tertiary: AppColors.progressPrimary,
         surface: AppColors.cardBackgroundDark,
-        background: AppColors.backgroundDark,
         error: AppColors.error,
       ),
       scaffoldBackgroundColor: AppColors.backgroundDark,
