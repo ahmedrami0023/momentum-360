@@ -38,13 +38,45 @@ vercel --prod
    - **Output Directory:** `build/web`
    - **Install Command:** Leave empty
 
-## Option 2: Automated Deployment via GitHub Actions
+## Option 2: Automated Deployment via GitHub Actions (Recommended)
 
-We can set up a GitHub Action that builds and deploys automatically. This requires:
-1. Vercel token as a GitHub secret
-2. GitHub Action workflow file
+The project is configured to automatically build and deploy to Vercel on every push to the `main` branch using GitHub Actions.
 
-Would you like me to set this up?
+### Setup Instructions
+
+1. **Get your Vercel Token:**
+   - Go to [Vercel Settings > Tokens](https://vercel.com/account/tokens)
+   - Click "Create Token"
+   - Give it a name (e.g., "GitHub Actions Deployment")
+   - Copy the token (you won't see it again)
+
+2. **Get your Vercel Project ID (optional but recommended):**
+   - Go to your project settings in Vercel dashboard
+   - The Project ID is shown in the project settings or URL
+
+3. **Get your Vercel Organization/Team ID (optional):**
+   - Can be found in your Vercel team/organization settings
+   - Or inferred automatically from the token
+
+4. **Add GitHub Secrets:**
+   - Go to your GitHub repository
+   - Navigate to **Settings > Secrets and variables > Actions**
+   - Click **New repository secret**
+   - Add the following secrets:
+     - `VERCEL_TOKEN` - Your Vercel token from step 1
+     - `VERCEL_PROJECT_ID` - Your project ID (optional, but recommended)
+     - `VERCEL_ORG_ID` - Your organization ID (optional)
+
+5. **Configure Vercel Dashboard (Optional):**
+   - You can disable automatic deployments in Vercel dashboard since GitHub Actions will handle deployments
+   - Or keep both enabled (GitHub Actions will deploy on push)
+
+### How It Works
+
+- The workflow builds the Flutter web app on every push to `main`
+- After successful build, it automatically deploys to Vercel production
+- Pull requests will build and test but won't deploy
+- Deployments are tracked in both GitHub Actions and Vercel dashboard
 
 ## Option 3: Build on Vercel (Advanced)
 
