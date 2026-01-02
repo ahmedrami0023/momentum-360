@@ -55,21 +55,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Setup Flutter
-        uses: subosito/flutter-action@v2
+      - name: Download web build artifacts
+        uses: actions/download-artifact@v4
         with:
-          flutter-version: '3.38.5'
-          channel: 'stable'
-          cache: true
-      
-      - name: Install dependencies
-        run: flutter pub get
-      
-      - name: Build Web
-        run: flutter build web --release
+          name: web-build
+          path: build/web
       
       - name: Copy vercel.json to build directory
         run: cp vercel.json build/web/vercel.json
+      
+      - name: Cache npm packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-vercel-cli
+          restore-keys: |
+            ${{ runner.os }}-npm-
       
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
