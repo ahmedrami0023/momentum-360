@@ -33,7 +33,7 @@ jobs:
         run: flutter test
       
       - name: Build Web
-        run: flutter build web --release
+        run: flutter build web --release --web-renderer html --no-source-maps
       
       - name: Upload web build artifacts
         uses: actions/upload-artifact@v4
