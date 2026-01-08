@@ -29,6 +29,7 @@
 - [/] UI Implementation
     - [x] **Navigation Structure** (Tabs, Stacks)
     - [x] **Auth Screens** (Premium UI with inline errors)
+    - [x] **Skia Web Config** (Fixed WASM loading for Aurora)
     - [ ] **Dashboard UI**
     - [ ] **Logging Screens**
 

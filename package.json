@@ -10,18 +10,22 @@
   },
   "dependencies": {
     "@babel/core": "^7.26.0",
+    "@expo-google-fonts/inter": "^0.4.2",
     "@expo/metro-runtime": "~6.1.2",
     "@react-native-async-storage/async-storage": "^2.2.0",
+    "@shopify/react-native-skia": "2.2.12",
     "@supabase/supabase-js": "^2.90.0",
     "@tanstack/react-query": "^5.90.16",
     "babel-preset-expo": "~54.0.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "expo": "~54.0.31",
+    "expo-blur": "~15.0.8",
     "expo-constants": "~18.0.13",
     "expo-linking": "~8.0.11",
     "expo-router": "~6.0.21",
     "expo-status-bar": "~3.0.9",
+    "framer-motion": "^12.24.12",
     "lucide-react-native": "^0.562.0",
     "moti": "^0.30.0",
     "nativewind": "^4.2.1",
@@ -45,6 +49,11 @@
   "devDependencies": {
     "@types/react": "~19.1.0",
     "typescript": "~5.9.2"
+  },
+  "overrides": {
+    "framer-motion": "$framer-motion",
+    "react": "$react",
+    "react-dom": "$react-dom"
   },
   "private": true
 }

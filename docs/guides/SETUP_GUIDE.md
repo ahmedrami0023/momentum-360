@@ -75,4 +75,13 @@ Once your Supabase project is ready (green "Active" status):
 *   **Supabase**: We will use `Supabase-Mcp` for management.
 *   **Design**: We will use standard `NativeWind` libraries directly.
 
+## 5. Web Support (Skia/WASM)
+If you plan to run the app on the web (`npx expo start --web`), you need to ensure Skia's WASM binary is accessible.
+
+1.  **Create Public Folder**:
+    Ensure a `public/` folder exists in the root.
+2.  **Copy WASM**:
+    Copy `canvaskit.wasm` from `node_modules/canvaskit-wasm/bin/full/canvaskit.wasm` to `public/canvaskit.wasm`.
+    *(This is already handled if you used the agent's fix).*
+
 **You are now ready to start Phase 3: Scaffolding!**

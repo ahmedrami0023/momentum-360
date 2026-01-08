@@ -4,26 +4,26 @@
 
 ## 1. Core Technology Stack (The "Lovable Mobile" Stack)
 
-| Function | Tool | Rationale |
-| :--- | :--- | :--- |
-| **Framework** | **Expo SDK 52+** | Universal React Native. Compiles to iOS/Android Apps + Web PWA. |
-| **Navigation** | **Expo Router v4** | File-based routing (Next.js style). Ensures SEO and deep linking. |
-| **Language** | **TypeScript** | Strict type safety for AI readiness. |
-| **Styling** | **NativeWind v4** | Tailwind CSS for Mobile. Shared `className` syntax with Web. |
-| **UI Components** | **React Native Reusables** | Shadcn UI port. Accessible, copy-paste ownership. |
-| **Animations** | **Moti** | 60fps Native animations (Powered by Reanimated). |
-| **Icons** | **Lucide React Native** | Consistent iconography across platforms. |
+| Function          | Tool                       | Rationale                                                         |
+| :---------------- | :------------------------- | :---------------------------------------------------------------- |
+| **Framework**     | **Expo SDK 52+**           | Universal React Native. Compiles to iOS/Android Apps + Web PWA.   |
+| **Navigation**    | **Expo Router v4**         | File-based routing (Next.js style). Ensures SEO and deep linking. |
+| **Language**      | **TypeScript**             | Strict type safety for AI readiness.                              |
+| **Styling**       | **NativeWind v4**          | Tailwind CSS for Mobile. Shared `className` syntax with Web.      |
+| **UI Components** | **React Native Reusables** | Shadcn UI port. Accessible, copy-paste ownership.                 |
+| **Animations**    | **Moti**                   | 60fps Native animations (Powered by Reanimated).                  |
+| **Icons**         | **Lucide React Native**    | Consistent iconography across platforms.                          |
 
 ## 2. Data & State Management
 
-| Function | Tool | Description |
-| :--- | :--- | :--- |
-| **Backend** | **Supabase** | PostgreSQL Database + Auth. Relational data model. |
-| **Fetching** | **TanStack Query** | Async state, caching, optimistic updates. |
-| **Offline** | **MMKV** | High-performance sync storage (30x faster than AsyncStorage). |
-| **Validation** | **Zod** | Runtime schema validation (API + Forms). |
-| **Forms** | **React Hook Form** | Manages input state and validation rules. |
-| **Charts** | **Victory Native** | Universal charting for "Momentum Velocity" & Macros. |
+| Function       | Tool                | Description                                                   |
+| :------------- | :------------------ | :------------------------------------------------------------ |
+| **Backend**    | **Supabase**        | PostgreSQL Database + Auth. Relational data model.            |
+| **Fetching**   | **TanStack Query**  | Async state, caching, optimistic updates.                     |
+| **Offline**    | **MMKV**            | High-performance sync storage (30x faster than AsyncStorage). |
+| **Validation** | **Zod**             | Runtime schema validation (API + Forms).                      |
+| **Forms**      | **React Hook Form** | Manages input state and validation rules.                     |
+| **Charts**     | **Victory Native**  | Universal charting for "Momentum Velocity" & Macros.          |
 
 ## 3. Directory Structure
 
@@ -55,10 +55,10 @@
 ## 4. Implementation Phases
 
 ### Phase 1: The Foundation ("Hello World")
-- [ ] Initialize Expo project with TypeScript + NativeWind v4 template.
-- [ ] Setup Supabase Project (Tables: `profiles`, `foods,` `workouts`).
-- [ ] Configure `React Native Reusables` (Shadcn theme).
-- [ ] Implement Auth Flow (Email/Password) with Supabase Auth.
+- [x] Initialize Expo project with TypeScript + NativeWind v4 template.
+- [x] Setup Supabase Project (Tables: `profiles`, `foods,` `workouts`).
+- [x] Configure `React Native Reusables` (Shadcn theme).
+- [x] Implement Auth Flow (Email/Password) with Supabase Auth.
 
 ### Phase 2: Core Pillars (MVP)
 - [ ] **Nutrition**: Connect OpenFoodFacts API. Build Search UI. Implement "Quick Add".
@@ -71,7 +71,7 @@
 - [ ] Polish Animations with **Moti** (Entry effects, success states).
 
 ### Phase 4: Verification & Polish
-- [ ] **Web Check**: Verify Responsive Grid (`md:grid-cols-2`).
+- [x] **Web Check**: Verify Responsive Grid (`md:grid-cols-2`) and Skia WASM loading.
 - [ ] **Mobile Check**: precise "safe area" handling.
 - [ ] **Performance**: Verify MMKV loading speed.
 
