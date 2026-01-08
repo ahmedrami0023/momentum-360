@@ -30,6 +30,12 @@ We do not guess. We verify. We use **ALL** our tools for **EVERY** significant t
     *   **Trigger**: If we are limited or need specialized tools, ask Compass.
 *   **Predev (The Architect)**:
     *   Use for deep specs and massive documentation.
+*   **Supabase-Mcp (The Database)**:
+    *   **MANDATE**: Use `Supabase-Mcp` for ALL database operations (queries, migrations, schema inspection).
+    *   *Why*: Keeps us in the flow without switching contexts.
+*   **Chrome-DevTools (The Microscope)**:
+    *   **MANDATE**: Use for deep DOM inspection and Accessibility tree verification during Phase 4.
+    *   *Why*: Ensures structure and accessibility are perfect.
 
 ---
 
@@ -61,11 +67,11 @@ We do not guess. We verify. We use **ALL** our tools for **EVERY** significant t
 *   **Goal**: Blueprint the app.
 
 ### Phase 3: Setup & Implementation
-*   **Action**: Structure (`Filesystem`) -> Logic Plan (`Sequential`) -> Code (`Filesystem`).
+*   **Action**: Structure (`Filesystem`) -> Logic Plan (`Sequential`) -> Database (`Supabase-Mcp`) -> Code (`Filesystem`).
 *   **Goal**: Build the MVP.
 
 ### Phase 4: Verification & QA
-*   **Action**: **VISUAL MANDATE** (`Playwright`) -> Logic Edge Cases (`Sequential`).
+*   **Action**: **VISUAL MANDATE** (`Playwright`) -> **DOM/A11y** (`Chrome-DevTools`) -> Logic Edge Cases (`Sequential`).
 *   **Goal**: Premium Quality.
 
 ### Phase 5: Distribution & Growth

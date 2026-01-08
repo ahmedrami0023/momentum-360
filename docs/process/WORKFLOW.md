@@ -39,7 +39,8 @@ This file orchestrates how we build your cross-platform app.
     1.  **Scaffolding**: Use `filesystem` to create the project structure.
     2.  **Coding Loop**:
         *   **Think**: Use `sequential-thinking` to plan the function/component.
-        *   **Check**: Use `brave-search` (or `fetch` for docs) to find the documentation for the library we are using.
+        *   **Check**: Use `brave-search` (or `fetch` for docs) to find the documentation.
+        *   **Database**: Use `Supabase-Mcp` to create tables or run queries.
         *   **Code**: Use `filesystem` to write the file.
     3.  **Style**: See `04_core_principles.md` (Readable, Simple Comments).
 
@@ -50,6 +51,7 @@ This file orchestrates how we build your cross-platform app.
 *   **Detailed Steps**:
     1.  **Visual Test**:
         *   **MANDATE**: Use `playwright` to open the app, click buttons, and take screenshots.
+        *   **Microscope**: Use `chrome-devtools` to inspect the DOM and Accessibility tree.
         *   **NEVER** just say "it should work". See it.
     2.  **Logic Test**: Use `sequential-thinking` to trace potential edge cases (e.g., "What if the user is offline?").
     3.  **Debug**: If it fails, use `brave-search` to find the error message.

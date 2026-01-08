@@ -70,10 +70,9 @@ Once your Supabase project is ready (green "Active" status):
     > [!NOTE]
     > We use `EXPO_PUBLIC_` prefix so Expo can access these variables in the app.
 
-## 4. MCP Tools Ready
+## 4. Tools & Next Steps
 
-We have identified the following MCP servers for your workflow:
-*   **Supabase Management**: `Supabase-Mcp`
-*   **Design System**: `Mcp-Nativewind` (Converts Tailwind -> NativeWind)
+*   **Supabase**: We will use `Supabase-Mcp` for management.
+*   **Design**: We will use standard `NativeWind` libraries directly.
 
-**You are now ready to start coding!**
+**You are now ready to start Phase 3: Scaffolding!**
