@@ -97,16 +97,3 @@ We do not guess. We verify. We use **ALL** our tools for **EVERY** significant t
     *   **Requirement**: Lots of short, simple comments explaining the "why".
 *   **Security Strategy**: "Security by Design".
     *   Validate everything. Secrets (API Keys) never in code.
-
----
-
-## 6. Frontend & Styling Standards
-*   **Styling Engine**: **NativeWind v4** (Tailwind CSS).
-    *   **MANDATE**: Use `className` for ALL styling. Avoid `StyleSheet.create` unless absolutely necessary for dynamic values.
-    *   **Conditional Styles**: ALWAYS use `cn()` utility (clsx + tailwind-merge).
-        *   *Example*: `className={cn("p-4 bg-white", isActive && "bg-blue-500")}`
-*   **UI Components**:
-    *   **Source**: Copy/Paste from `React Native Reusables` (Shadcn port).
-    *   **Location**: Place primitive UI components in `components/ui`.
-*   **Imports**:
-    *   Use **Absolute Imports** (e.g., `@/components/ui/button`) configured in `tsconfig.json`.
